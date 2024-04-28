@@ -4,13 +4,13 @@ import logo from "./Logo.png";
 
 function Landing_page() {
   const [screen, setscreen] = useState(false);
-  window.onload = () => {
+  window.onload=()=>{
     if (window.innerWidth >= 941) {
         setscreen(true);
       } else {
         setscreen(false);
     }
-};
+  }
   useEffect(() => {
     window.addEventListener("resize ", () => {
       if (window.innerWidth >= 941) {
@@ -19,7 +19,7 @@ function Landing_page() {
         setscreen(false);
       }
     });
-  }, );
+  }, []);
   return (
     <div className="w-full h-auto flex justify-between px-2 gap-2 py-2">
       <div>
