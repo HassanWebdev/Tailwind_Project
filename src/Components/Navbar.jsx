@@ -5,12 +5,20 @@ import logo from "./Logo.png";
 function Landing_page() {
   const [screen, setscreen] = useState(false);
   useEffect(() => {
-    window.addEventListener("resize", () => {
+    window.addEventListener("resize ", () => {
       if (window.innerWidth >= 941) {
         setscreen(true);
       } else {
         setscreen(false);
       }
+    });
+    window.addEventListener('load', function(event) {
+   // Your load event handling code here 
+    if (window.innerWidth >= 941) {
+        setscreen(true);
+      } else {
+        setscreen(false);
+    }
     });
   }, []);
   return (
