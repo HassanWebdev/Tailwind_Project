@@ -4,13 +4,7 @@ import logo from "./Logo.png";
 
 function Landing_page() {
   const [screen, setscreen] = useState(false);
-  window.onload=()=>{
-    if (window.innerWidth >= 941) {
-        setscreen(true);
-      } else {
-        setscreen(false);
-    }
-  }
+  
   useEffect(() => {
     window.addEventListener("resize ", () => {
       if (window.innerWidth >= 941) {
