@@ -3,6 +3,14 @@ import React, { useEffect, useState } from "react";
 import logo from "./Logo.png";
 
 function Landing_page() {
+  window.addEventListener("load", () => {
+      if (window.innerWidth >= 941) {
+        setscreen(true);
+      } else {
+        setscreen(false);
+      }
+    });
+ 
   const [screen, setscreen] = useState(false);
   useEffect(() => {
     window.addEventListener("resize ", () => {
@@ -12,15 +20,7 @@ function Landing_page() {
         setscreen(false);
       }
     });
-    window.addEventListener('load', function(event) {
-   // Your load event handling code here 
-    if (window.innerWidth >= 941) {
-        setscreen(true);
-      } else {
-        setscreen(false);
-    }
-    });
-  }, []);
+  }, );
   return (
     <div className="w-full h-auto flex justify-between px-2 gap-2 py-2">
       <div>
