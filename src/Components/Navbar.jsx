@@ -13,7 +13,7 @@ function Landing_page() {
         setscreen(false);
       }
     });
-  });
+  },[]);
   return (
     <div className="w-full h-auto flex justify-between px-2 gap-2 py-2">
       <div>
