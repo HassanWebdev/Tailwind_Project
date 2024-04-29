@@ -56,7 +56,7 @@ function Landing_page() {
         ) : null}
         {screen ? null : (
           <div>
-            <button className="bg-[#4CAF4F] px-1 rounded-[.2rem] py-1 text-white "></button>
+            <button className="bg-[#4CAF4F] px-1 rounded-[.2rem] py-1 text-white "> <i class="fa-solid fa-ellipsis-vertical"></i></button>
           </div>
         )}
       </div>
