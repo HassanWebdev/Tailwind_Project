@@ -6,13 +6,6 @@ function Landing_page() {
   const [screen, setscreen] = useState(false);
   
   useEffect(() => {
-      window.addEventListener("load", () => {
-      if (window.innerWidth >= 941) {
-        setscreen(true);
-      } else {
-        setscreen(false);
-      }
-    });
     window.addEventListener("resize ", () => {
       if (window.innerWidth >= 941) {
         setscreen(true);
